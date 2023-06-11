@@ -7,6 +7,8 @@ Implementation of two few-shot method (Baseline and Meta Baseline) for MedFMC
 * sklearn (recommended 1.2.2): pip install sklearn  
 ****
 ## Usage 
-* Firstly, run the script of 'run_extract_feats.sh' to extract the features via pretrained models (e.g. swin-base) of all the test images in each dataset. The extracted features would be stored as '.npy' format file in the sub-folder 'test_feats/' of the dataset folder.   
-* Secondly, run the script of 'run_fewshot_baseline' to test the results of Baseline and Meta Baseline method under 1, 5, 10 shot with 10 iterations for each dataset. The reported results and corresponding sampled support list are stored in the sub-folder 'work_dir/job_name/' of the dataset folder.
+* Firstly, run the script of '**run_extract_feats.sh**' to extract the features via pretrained models (e.g. swin-base) of all the test images in each dataset. The extracted features would be stored as '.npy' format file in the sub-folder '**test_feats/**' of the dataset folder.   
+* Secondly, run the script of '**run_fewshot_baseline**' to test the results of Baseline and Meta Baseline method under 1, 5, 10 shot with 10 iterations for each dataset. The reported results and corresponding sampled support list are stored in the sub-folder '**work_dir/job_name/**' of the dataset folder.
+****
+## Dataset
 
