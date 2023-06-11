@@ -1,2 +1,5 @@
 # MedFMC_fewshot_baseline
-Implementation of few-shot baseline for MedFMC
+Implementation of two few-shot method (Baseline and Meta Baseline) for MedFMC
+
+Requirements
+
