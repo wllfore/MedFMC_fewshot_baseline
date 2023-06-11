@@ -11,4 +11,4 @@ Implementation of two few-shot method (Baseline and Meta Baseline) for MedFMC
 * Secondly, run the script of '**run_fewshot_baseline**' to test the results of Baseline and Meta Baseline method under 1, 5, 10 shot with 10 iterations for each dataset. The reported results and corresponding sampled support list are stored in the sub-folder '**work_dir/job_name/**' of the dataset folder.
 ****
 ## Dataset
-
+Five datasets (ChestDR, Endo, NeoJaudice, ColonPath, Retino) contains 'images/' (all the processed images), 'trainval.txt' (the image list for randomly picking support set), 'test.txt' (the remaining images for testing), 'test_feats/' and 'work_dir/'. We have upload all these data, the link is .
