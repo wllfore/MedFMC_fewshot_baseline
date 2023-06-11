@@ -1,0 +1,7 @@
+# python fewshot_baseline.py --model swin-base --dataset Endo --data_dir /mnt/data/smart_health_02/wanglilong/data/MedFMC/Endo --shot 5 --max_iters 10 --job_name test_shot_5_base
+# python fewshot_baseline.py --model swin-base --dataset Endo --data_dir /mnt/data/smart_health_02/wanglilong/data/MedFMC/Endo --shot 10 --max_iters 10 --job_name test_shot_10_base
+# python fewshot_baseline.py --model swin-base --dataset Endo --data_dir /mnt/data/smart_health_02/wanglilong/data/MedFMC/Endo --shot 1 --max_iters 10 --job_name test_shot_1_base
+python fewshot_baseline.py --method Baseline --model simmim-swin-base --dataset NeoJaundice --data_dir /mnt/data/smart_health_02/wanglilong/data/MedFMC/NeoJaundice --shot 10 --max_iters 3 --job_name just_test
+python fewshot_baseline.py --method MetaBaseline --model simmim-swin-base --dataset NeoJaundice --data_dir /mnt/data/smart_health_02/wanglilong/data/MedFMC/NeoJaundice --shot 10 --max_iters 3 --job_name just_test
+# python fewshot_baseline.py --model simmim-swin-base --dataset NeoJaundice --data_dir /mnt/data/smart_health_02/wanglilong/data/MedFMC/NeoJaundice --shot 10 --max_iters 10 --job_name test_shot_10_simmim
+# python fewshot_baseline.py --model simmim-swin-base --dataset NeoJaundice --data_dir /mnt/data/smart_health_02/wanglilong/data/MedFMC/NeoJaundice --shot 1 --max_iters 10 --job_name test_shot_1_simmim

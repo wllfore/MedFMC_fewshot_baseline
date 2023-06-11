@@ -1,0 +1,2 @@
+python extract_feats.py --model simmim-swin-base --dataset Endo --data_dir /mnt/data/smart_health_02/wanglilong/data/MedFMC/Endo
+python extract_feats.py --model swin-base --dataset Endo --data_dir /mnt/data/smart_health_02/wanglilong/data/MedFMC/Endo
