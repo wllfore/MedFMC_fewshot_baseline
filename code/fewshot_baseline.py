@@ -44,7 +44,7 @@ def run():
     model = get_model(model_config, pretrained=True, device=DEVICE)
 
     ### step 2. load img list
-    train_list_txt = os.path.join(args.data_dir, 'trainval.txt')
+    train_list_txt = os.path.join(args.data_dir, 'fewshot-pool.txt')
     test_list_txt = os.path.join(args.data_dir, 'test.txt')
 
     train_img_infos = []
@@ -70,7 +70,7 @@ def run():
 
     for iter in range(args.max_iters):
         print ('\n----------------test iter = {}----------------'.format(iter))
-        ### step 3. support set randomly sampled from the trainval set
+        ### step 3. support set randomly sampled from the fewshot-pool set
         support_set = gen_support_set_interface(train_img_infos, N_way, K_shot, args.dataset)
         all_support_sets.append(support_set)
 
