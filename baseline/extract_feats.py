@@ -73,6 +73,12 @@ def extract_test_feats(img_list, model, data_dir, fea_dim):
         print ('\r', 'process: {}/{}'.format(count, img_num), end='', flush=True)
         img_name = item['filename']
         img_file = os.path.join(data_dir, 'images/', img_name)
+
+        ###add png or jpg 20231005
+        img_file = img_file + '.jpg'
+        if not os.path.exists(img_file):
+            img_file = img_file.replace('.jpg', '.png')
+        
         img_fea = extract_model_fea(model, img_file)
         test_feats[count-1, :] = img_fea
         # print (img_fea)     
