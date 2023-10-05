@@ -23,6 +23,12 @@ def train_cls_model_multiclass(support_set, data_dir, model, fea_dim):
         imgs_per_cls = support_set[cls_idx]
         for item in imgs_per_cls:
             img_file = os.path.join(data_dir, 'images/', item)
+            
+            ###add png or jpg 20231005
+            img_file = img_file + '.jpg'
+            if not os.path.exists(img_file):
+                img_file = img_file.replace('.jpg', '.png')
+                
             img_fea = extract_model_fea(model, img_file)
             X_train[sample_idx, :] = img_fea
             sample_idx += 1
@@ -49,6 +55,12 @@ def train_cls_model_multilabel(support_set, data_dir, model, fea_dim):
         imgs_per_cls = support_set[cls_idx]
         for item in imgs_per_cls:
             img_file = os.path.join(data_dir, 'images/', item[0])
+
+            ###add png or jpg 20231005
+            img_file = img_file + '.jpg'
+            if not os.path.exists(img_file):
+                img_file = img_file.replace('.jpg', '.png')
+            
             img_fea = extract_model_fea(model, img_file)
             X_train[sample_idx, :] = img_fea
             sample_idx += 1
