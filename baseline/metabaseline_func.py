@@ -22,6 +22,12 @@ def compute_cls_centers(support_set, data_dir, model, fea_dim, is_multiclass=Tru
             else:
                 image_name = item[0]
             img_file = os.path.join(data_dir, 'images/', image_name)
+
+            ###add png or jpg 20231005
+            img_file = img_file + '.jpg'
+            if not os.path.exists(img_file):
+                img_file = img_file.replace('.jpg', '.png')
+            
             img_fea = extract_model_fea(model, img_file)
             cls_center = cls_center + img_fea
         cls_center = cls_center / len(imgs_per_cls)
