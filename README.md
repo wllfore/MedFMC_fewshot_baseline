@@ -13,3 +13,6 @@ Implementation of two few-shot method (Baseline and Meta Baseline) for MedFMC
 ## Dataset Split
 * In our experiments, image list used for randomly picking support set of each dataset is saved as 'fewshot-pool.txt', meanwhile image list consisted of the remaining testing images as 'test.txt'. These two image list files can also be found in data folder (e.g. ./data/ChestDR/test.txt).
 * When you start to test this baseline, please place all the preprocessed images of each dataset into the sub-folder 'images/' beforehand (e.g. ./data/ChestDR/images/).   
+****
+## Cite this article
+Wang, D., Wang, X., Wang, L. et al. A Real-world Dataset and Benchmark For Foundation Model Adaptation in Medical Image Classification. Sci Data 10, 574 (2023). https://doi.org/10.1038/s41597-023-02460-0
